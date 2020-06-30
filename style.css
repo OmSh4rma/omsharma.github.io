@@ -1,0 +1,219 @@
+
+/*import fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Didact+Gothic&family=Lora&family=Modak&family=Oswald&display=swap');
+body{
+    overflow-y : auto;
+}
+
+:root{
+    --primary-color: #000;
+    --light-gray: #2b3032a1;
+    --border: #2b303218; 
+    --text-color: #000000;
+    --barlow-condensed: 'Barlow Condensed', sans-serif;
+    --didcat-gothic:'Didact Gothic', sans-serif;
+    --lora:'Lora', serif;
+    --modak: 'Modak', cursive;
+    --oswald: 'Oswald', sans-serif;
+    --primary-gradient: linear-gradient(to right, #4e4376, #2b5876);
+    --blue-gradient: linear-gradient( #000000);
+
+}
+
+.primary-color{
+    color:var(--primary-color)
+}
+
+bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+
+.text-color{
+    color: var(--text-color)
+}
+
+.font-modak{
+    font-family: var(--modak);
+}
+
+.lightblue{
+    color: lightblue
+}
+
+/* header */
+/*
+header{
+    background-color: var(--primary-color);
+    font-family: var(--modak);
+}
+*/
+header.site-title{
+    font-family: var(--modak);
+}
+
+.container .dropdown-toggle,
+.comtainer .dropdown-item{
+    font-size: 0.7em; 
+}
+
+.header-links a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white; 
+}
+
+/* Navigation Menu **/
+.navbar-nav{
+    padding: 0.1em 0em;
+}
+
+.navbar-nav .nav-link .cart{
+    font-size: 1.0em;
+    color: var(--light-gray) !important;
+
+}
+
+.navbar-nav .nav-item .nav-link .cart{
+padding: 0 0.8em;
+
+}
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+
+}
+/* orignal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Modak', cursive;
+}
+
+
+
+.cart ion-icon{
+    vertical-align: button;
+    font-size: 20px;
+    margin-top: 0.2rem;
+    padding-right: 5px;
+
+}
+
+.cart a {
+    background-color: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-cart {
+    position: absolute;
+    width: 100%;
+    background-color:black;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+   }
+
+.products-container ion-icon{
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid rgb(184, 232, 255);
+    margin: 0 auto;
+
+}
+
+.product-title {
+    width: 45%;
+
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid rgb(184, 232, 255);
+    display: flex;
+    align-items: center;
+
+}
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+
+.total {
+    width: 45%;
+    border-bottom: 1px solid rgb(184, 232, 255);
+    display: flex;
+    align-items: center;
+
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(184, 232, 255);
+}
+
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 10%;
+}
+
+
